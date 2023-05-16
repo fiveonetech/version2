@@ -1,0 +1,99 @@
+@use '../../main';
+@import '../../variables';
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+.navbar-container{
+    @include main.container;
+    height: 75px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 3px 3px 5px hsla(0, 1%, 51%, 0.679);
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0px 32px;
+    display: flex;
+    max-height: 100%;
+    align-items: center !important;
+    justify-content: space-between;
+}
+
+.logo{
+    @include main.Logo;
+    padding: 8px;
+}
+
+.listContainer{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.listItem{
+    @include main.BodyLarge;
+    height: 100%;
+    cursor: pointer;
+
+    &:hover{
+        color: $primary-color !important;
+        transition: color .2s;
+    }
+}
+
+.accountItem{
+    position: relative;
+    :hover{
+        color: $primary-color !important;
+        transition: color .2s;
+    }
+}
+
+.account{
+    margin: 0 8px;
+}
+
+.accountPopup{
+    position: absolute;
+    top: 75px;
+    padding: 16px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:16px;
+    box-shadow: 3px 3px 5px hsla(0, 1%, 51%, 0.679);
+    border-radius: 3px;
+    transition: display 1s;
+    z-index: 999;
+    background-color: white;
+}
+
+.popupHr{
+    width: 100%;
+}
+
+.log{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 8px
+}
+
+.button{
+    @include main.Button;
+}
+
+.sub{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    color: $gray !important;
+    @include main.LabelLarge;
+}
