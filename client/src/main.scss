@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    overflow-x: hidden;
+}
+
+// .darkTheme{    
+//     background-color: $dark !important;
+//     color: $light !important;
+// }
+
+@mixin Logo{
+    font-family: 'Damion', cursive;
+    font-size: 42px;
+    color: $primary-color !important;
+    cursor: pointer;
+}
+
+@mixin HeadingLarge($color: black){
+    font-family: 'Roboto', sans-serif;
+    line-height: 40px;
+    font-size: 32px;
+    color: $color;
+}
+
+@mixin HeadingMedium($color: black){
+    font-family: 'Roboto', sans-serif;
+    line-height: 36px;
+    font-size: 28px;
+    color: $color;
+}
+
+@mixin HeadingSmall($color: black){
+    font-family: 'Roboto', sans-serif;
+    line-height: 32px;
+    font-size: 24px;
+    color: $color;
+}
+
+@mixin BodyLarge($color: black){
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    color: $color;
+}
+
+@mixin BodyMedium($color: black){
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+    font-size: 14px;
+    color: $color;
+}
+
+@mixin BodySmall($color: black){
+    font-family: 'Roboto', sans-serif;
+    line-height: 16px;
+    font-size: 12px;
+    color: $color;
+}
+
+@mixin LabelLarge($color: black){
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+    font-size: 14px;
+    color: $color;
+}
+
+@mixin LabelMedium($color: black){
+    font-family: 'Roboto', sans-serif;
+    line-height: 16px;
+    font-size: 12px;
+    color: $color;
+}
+
+@mixin LabelSmall($color: black){
+    font-family: 'Roboto', sans-serif;
+    line-height: 16px;
+    font-size: 11px;
+    color: $color;
+}
+
+@mixin container{
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+@mixin wrapper{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0px 32px;
+    display: flex;
+    max-height: 100%;
+}
+
+@mixin Button{
+    padding: 10px 20px;
+    background-color: $primary-color !important;
+    border: none;
+    height: 40px;
+    border-radius: 50px;
+    color: $light !important;
+    width: auto;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px hsla(0, 1%, 51%, 0.679);
+
+    &:hover{
+        box-shadow: 3px 3px 5px hsla(0, 58%, 37%, 0.334);
+    }
+}

@@ -1,0 +1,99 @@
+@use '../../main';
+@import '../../variables';
+
+.mainContainer{
+    @include main.container;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px 0px
+}
+
+.header{
+    @include main.wrapper;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    // border: 1px solid black;
+}
+
+.right{    
+    width: 100%;
+    max-width: 25%;
+}
+
+.left{
+    width: 100%;
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.advertisment{
+    padding: 0px 32px;
+    width: 100%;
+
+}
+
+.homeHr{
+    width: 1024px;
+    max-width: 1024px;
+    margin: 32px 0px;
+}
+
+.FlashSale, .JustForYou{
+    width: 1024px;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 32px 0px;
+}
+
+.titleSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.title>h1{
+    @include main.BodyLarge;
+    font-size: 18px !important;
+}
+
+.more{
+    @include main.LabelMedium;
+    color: $gray2-light !important;
+    cursor: pointer;
+}
+
+.saleItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+}
+
+.justItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    flex-wrap: wrap;
+}

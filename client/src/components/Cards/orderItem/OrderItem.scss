@@ -1,0 +1,75 @@
+@use '../../../main';
+@import '../../../variables';
+
+.itemContianer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    gap: 8px;
+    width: 100%;
+}
+.select{
+    display: flex;;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.select input{
+    cursor: pointer;
+}
+
+.orderitemImg{
+    display: flex;;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    
+    img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.itemorderDetails{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 8px;
+    gap: 8px;
+    width: 100%;
+}
+
+.priceQty{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.qtyChange{
+    background-color: rgba(128, 128, 128, 0.35) !important;
+}
+
+.delete{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.favIcon, .deleteIcon{
+    cursor: pointer;
+    transition: all, .2s;
+    &:hover{
+        color:  $primary-color !important;
+    }
+}

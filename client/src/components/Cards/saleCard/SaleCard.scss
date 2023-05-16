@@ -1,0 +1,55 @@
+@use '../../../main';
+@import '../../../variables';
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    background: $light;
+    cursor: pointer;
+    transition: box-shadow .3s;
+    
+    &:hover{
+        box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.425) !important;
+    }
+}
+
+
+.itemImg{
+    width: 100%;
+    height: 100%;
+}
+
+.cardDesc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 8px;
+    width: 100%;
+}
+
+.cardname{
+    @include main.BodyLarge;
+}
+
+.cardprice{
+    @include main.BodyLarge;
+    color: $secondary-light !important;
+}
+
+.sale{
+    @include main.LabelMedium;
+    color: $gray2-light !important;
+    text-decoration: line-through;
+}
+
+.rating{
+    @include main.LabelSmall;
+    color: $primary-color !important;
+
+    .startIcon{
+        color: $primary-color !important;
+    }
+}

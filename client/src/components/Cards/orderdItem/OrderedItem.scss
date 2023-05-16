@@ -1,0 +1,98 @@
+@use '../../../main';
+@import '../../../variables';
+
+.orderdItem-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    margin:  32px 0;
+    gap: 8px;
+    width: 100%;
+}
+
+.top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 0px;
+    gap: 4px;
+    width: 100%;
+    border-bottom: 1px solid $gray2-light !important;
+}
+
+.orderId{
+    @include main.BodyLarge;
+
+    span{
+        color: $error-dark !important;
+        cursor: pointer;;
+    }
+}
+
+.bottom-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    gap: 8px;
+    width: 100%;
+}
+
+.orderItemImg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemImg{
+    width: 150px;
+    height: 150px;
+}
+
+.orderDesc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+    width: 100%;
+}
+
+.cardname{
+    @include main.BodyLarge;
+}
+
+.orderdShop{
+    @include main.BodyMedium;
+    color: $gray2-light !important;
+}
+
+.status-wrapper, .price-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    @include main.BodyLarge;
+}
+
+.status{
+    padding: 0px 8px;
+    background-color: rgba(128, 128, 128, 0.374) !important;
+    color: $error-dark !important;
+    border-radius: 50px;
+}
+
+.date{
+    color: $gray2-light !important;
+    @include main.BodyMedium;
+}
+
+.price{
+    color: $error-dark !important;
+}

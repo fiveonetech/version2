@@ -1,0 +1,37 @@
+@use '../../main';
+@import '../../variables';
+
+.orders-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 16px;
+    width: 1024px;
+    max-width: 1024px;
+}
+
+.orderItem-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 100%;
+}
+
+.orderhr{
+    width:auto;
+    color: black;
+    flex: auto;
+}
+
+.allItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+    width: 100%;
+    gap: 16px;
+}

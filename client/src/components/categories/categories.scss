@@ -1,0 +1,74 @@
+@use '../../main.scss';
+@import '../../variables';
+
+.category-container{
+    width: auto;
+    max-width: 261px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0px;
+    margin: 32px 0px;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.titleWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.list{
+    width: 24px;
+    height: 24px;
+}
+
+.title{
+    @include main.BodyLarge;
+    font-size: 18px;
+}
+
+.types{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    transition: color .3s
+}
+
+.type{
+    @include main.BodyMedium;
+    cursor: pointer;
+    &:hover{
+        color: $gray !important;
+    }
+}
+
+
+.smallCat.titleWrapper{
+    position: relative;
+    cursor: pointer;
+}
+
+.down{
+    cursor: pointer;
+}
+
+.typesPopUp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    transition: color .3s;
+    position: absolute;
+    padding: 32px;
+    margin: 0px 32px;
+    background-color: $light;
+    box-shadow: 3px 3px 5px hsla(0, 1%, 51%, 0.479);
+    z-index: 10;
+
+}

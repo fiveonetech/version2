@@ -1,0 +1,65 @@
+@use '../../main';
+@import '../../variables';
+
+.footer-container{
+    @include main.container;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 1px 5px hsla(0, 1%, 51%, 0.679);;
+    align-items: center;
+}
+
+.footerItems{
+    @include main.wrapper;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 32px;
+    padding: 32px;
+}
+
+.ItemWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+}
+
+
+.itemTite{
+    @include main.HeadingSmall;
+    font-size: 20px;
+    padding-bottom: 16px;
+}
+
+.item{
+    @include main.LabelLarge;
+    cursor: pointer;
+}
+
+
+.bottomBar{
+    height: 40px;
+    width: 100%;
+    background: $primary-color !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $light !important;
+    letter-spacing: 2px;
+    @include main.LabelLarge;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+
+.brands{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}

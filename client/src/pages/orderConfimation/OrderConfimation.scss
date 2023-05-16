@@ -1,0 +1,118 @@
+@use '../../main';
+@import '../../variables';
+
+.orderconfirmation-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 16px;
+    width: 1024px;
+    max-width: 1024px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 60%;
+}
+
+.delivery-details, .payment-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    width: 100%;
+    gap: 8px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 100%;
+    .name{
+        width: fit-content;
+    }
+}
+
+.headingHr{
+    flex:auto;
+    background-color: $dark !important;
+}
+
+.detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+
+.label{
+    width: 150px;
+}
+
+.detail input{
+    width: 350px;
+    padding: 5px;
+    border: 1px solid #E7E0EB;
+    border-radius: 5px;
+    outline: none;
+}
+
+.paymentOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+
+.item-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+    width: 100%;
+}
+
+.summary{
+    width: 40%;
+}
+
+.summaryItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+
+.summarthr{
+    width: 100%;
+}
+
+.terms{
+    color: $gray2-dark !important;
+    width: 100%;
+    text-align: center;
+    @include main.LabelSmall;
+}

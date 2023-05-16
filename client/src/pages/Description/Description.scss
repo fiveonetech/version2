@@ -1,0 +1,248 @@
+@use '../../main';
+@import '../../variables';
+
+.mainContainer{
+    padding-bottom: 32px;
+}
+
+.descriptionSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    width: 1024px;
+    max-width: 1024px;
+}
+
+.shopDetails{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px;
+    border-right: 1px solid #000000;
+    gap: 32px;
+}
+
+.shop{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 100%
+}
+
+
+.shopDesc{
+    @include main.BodyMedium;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 8px;
+    color: $secondary-light !important;
+    @include main.BodyMedium;
+}
+
+.follow-visit{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+.follow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 4px;
+    width: 60px;
+    border: 3px solid $error-light !important;
+    border-radius: 40px;
+    font-weight: bold;
+    @include main.LabelMedium;
+    color: $error-light !important;
+    width: 50%;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover{
+        color: $error-dark !important;
+        border-color: $error-dark !important;
+    }
+}
+
+.visit{
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 2px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 4px;
+    width: 60px;
+    border: 3px solid $error-light !important;
+    border-radius: 40px;
+    font-weight: bold;
+    @include main.LabelMedium;
+    color: $error-light !important;
+    width: 50%;
+    background-color: $error-light !important;
+    color: $light !important;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover{
+        background-color: $error-dark !important;
+        border-color: $error-dark !important;
+    }
+}
+
+.shopCategories{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+.shopTopSales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 100%;
+}
+
+.title{
+    font-weight: bold;
+}
+
+
+.otherDetails{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 16px;
+}
+
+.sectionType{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 100%;
+    @include main.BodyLarge;
+}
+
+.sectionType div{
+    padding: 10px 20px;
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(128, 128, 128, 0.249) !important;
+        border-bottom: 2px solid $dark !important;
+    }
+}
+
+.active{
+    background-color: rgba(128, 128, 128, 0.249) !important;
+    border-bottom: 2px solid $dark !important;
+}
+
+.sectionType div span{
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.sectionContainer{
+    width: 100%;
+}
+
+.itemDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+}
+
+.descriptionSection{
+    @include main.BodyMedium;
+    color: $gray2-light !important;
+    width: 100%;
+    line-height: 2;
+}
+
+.descImgSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+}
+.descImg{
+    width: 90%;
+    height: 100%;
+}
+
+.reviewSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px auto;
+    gap: 10px;
+}
+
+.review{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+    border: 1px solid #E7E0EB;
+    border-radius: 10px;
+}
+
+.cusName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+.customer-name{
+    @include main.BodyMedium;
+    font-weight: bold;
+    letter-spacing: 2px;
+}

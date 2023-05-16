@@ -1,0 +1,210 @@
+@use '../../../main';
+@import '../../../variables';
+
+.descrption-container{
+    width: 1024px;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 32px;
+}
+
+.photo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    border-right: 1px solid #000000;
+}
+
+.mainPhoto{
+    width: auto;
+    height: auto;
+}
+
+.mainPhoto>img{
+    width: 300px;
+    height: 300px;
+}
+
+.subImages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 8px;
+    gap: 8px;
+}
+
+.subImg{
+    width: 75px;
+    height: 75px;
+    background-color: #000000;
+}
+
+.desc-section{
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    height: 100%;
+}
+
+.name{
+    @include main.HeadingSmall;
+}
+
+.price{
+    @include main.BodyLarge;
+}
+
+.desc{
+    @include main.LabelMedium;
+    letter-spacing: 1px;
+    color: $gray2-light !important;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+.comments, .solds{
+    @include main.LabelMedium;
+    letter-spacing: 1px;
+}
+
+.costs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+
+.descHr{
+    width: 100%;
+    margin: 8px 0px;
+}
+
+.cost{
+    @include main.HeadingSmall;
+    color: $secondary-light !important;
+}
+
+.originalCost{
+    @include main.LabelSmall;
+    text-decoration: line-through;
+    color: $gray2-light !important;
+}
+
+.salep{
+    padding: 0px 8px;
+    gap: 10px;
+    color: $light !important;
+    @include main.LabelSmall;
+    background: $error-light !important;
+}
+
+.quantity{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+}
+
+.qty{
+    @include main.BodyMedium;
+    letter-spacing: 1px;
+}
+
+.qtyFilter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+.decrease, .increase{
+    // padding: 8px;
+    width: 30px;
+    height: 30px;
+    background: $primary-color !important;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.number{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    border: none;
+}
+
+.Fee{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 100%;
+}
+
+.feetype{
+    @include main.BodyMedium;
+    letter-spacing: 1px;
+}
+
+.price{
+    color: $dark !important;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
+    width: 100%;
+}
+
+.buttons button{
+    width: 50%;
+    transition: background-color .5s;
+}
+
+.btncart{
+    background-color: $error-dark !important;
+    &:hover{
+        background-color: $error-light !important;
+    }
+}
+
+.btnbuy{
+    background-color: $secondary-dark !important;
+    &:hover{
+        background-color: $secondary-light !important;
+    }
+}

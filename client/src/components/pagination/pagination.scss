@@ -1,0 +1,25 @@
+@use '../../main.scss';
+@import '../../variables';
+
+.pagination-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 16px;
+}
+
+.pagebtn{
+    padding: 4px;
+    width: 30px;
+    height: 30px;
+    background: $gray !important;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        background: $gray2-dark !important;
+    }
+}
